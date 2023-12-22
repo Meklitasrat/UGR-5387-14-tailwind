@@ -3,83 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extracurricular</title>
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+      <script src="tailwind.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
- 
-   
-  <body>
-    <header class="menu"> 
-        <h1 >My Extracurricular</h1>
-        <nav>
+<body class=" ">
+    <header class="bg-yellow-50 "> 
+        <div class="flex justify-between items-center " >
+            <h1 class="m-3 p-4 font-bold text-3xl font-serif"> <i class="fa fa-certificate"></i> Extracurricular </h1>
+            <div class="px-4  cursor-pointer md:hidden" id="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+        </div>
 
-            
-            <ul>
-                <li><a href="home.html"> <i class="fa fa-home "></i> Home</a> </li>
-                <li><a href="hobby.html"> &#9836;Hobbies</a> </li>
-                <li> <a href="certificate.html"><i class="fa fa-check "></i>Certificate</a></li>
-                <li> <a href="Resume.html"> <i class="fa fa-copy "></i>Resume </a></li>
-                <li> <a href="Extracurricular.html"><i class="fa fa-certificate "></i>Extracurricular</a> </li>
+        <nav class=" hidden md:block m-5 " id="menu">
+            <ul class="flex flex-col md:flex-row md:justify-center">
+                <li class="m-3"><a href="home.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl hover:scale-150 font-serif"><i class="fa fa-home"></i> Home</a></li>
+                <li class="m-3"><a href="hobby.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif">&#9836;Hobbies</a></li>
+                <li class="m-3"><a href="certificate.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif"><i class="fa fa-book"></i>Certificate</a></li>
+                <li class="m-3"><a href="Resume.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif"><i class="fa fa-copy"></i>Resume</a></li>
+                <li class="m-3"><a href="Extracurricular.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200  p-2 m-5 text-1xl font-serif"><i class="fa fa-certificate"></i>Extracurricular</a></li>
             </ul>
-            
         </nav>
-        
-        <div class="menu-bar-container">
-            <label class="hamburger-menu">
-              <input type="checkbox">
-            </label>
-            <aside class="sidebar">
-              <nav>
-                <ul>
-                    <li><a href="home.html"> <i class="fa fa-home "></i> Home</a> </li>
-                    <li><a href="hobby.html"> &#9836;Hobbies</a> </li>
-                    <li> <a href="certificate.html"><i class="fa fa-check "></i>Certificate</a></li>
-                    <li> <a href="Resume.html"> <i class="fa fa-copy "></i>Resume </a></li>
-                    <li> <a href="Extracurricular.html"><i class="fa fa-certificate "></i>Extracurricular</a> </li>
-                </ul>
-                
-              </nav>
-            </aside>
-          </div>
-        
-       </header>
+    </header>
     <hr>
-    <div>
-        <h3> Stem Club Vice-president</h3>
-        <img src="Image/Stem.jpg" alt="Stem">
-        <p> Being the co-founder and Vice-president I have held different days and sessions to give awarness about the club.</p>
-    </div>
-    <hr>
-    <div class="fere">
-        <h3> Representative of the literary Club at a sunday school</h3>
-        <img src="Image/Fere.jpg" alt="fere"> <audio src="Audio.mp3" controls></audio>
-        <p> Since I was exposed to the world of sunday shool, 5 years ago, I have found my self deeply enaged with litrature and theartre. Working there has helped me develope my confidence, leadership skill highly.  </p>
+    <div class="md:grid md:grid-cols-2 border-2 border-orange-200 m-4 rounded">
+        <div class="border-2 m-4 rounded bg-yellow-50 shadow-xl mb-6 mt-10">
+            <h3 class="text-1xl font-bold"> Stem Club Vice-president</h3>
+            <div class="flex items-center">
+                <img src="Image/Stem.jpg" alt="Stem"  class="object-scale-down w-20 h-40 m-2 ">
+                <p class="border-2 bg-slate-50 rounded m-2"> Being the co-founder and Vice-president I have held different days and sessions to give awarness about the club.</p>
+    
+            </div>
+        </div>
+       
+        <div class="border-2 m-4 rounded bg-yellow-50 shadow-xl mb-6 mt-10">
+            <h3 class="text-1xl font-bold"> Representative of the literary Club at a sunday school</h3>
+            <div class=" flex items-center ">
+              <img src="Image/Fere.jpg" alt="fere" class="object-scale-down w-25 h-40  m-2 ">
+              <p class="border-2 bg-slate-50 rounded m-2"> Since I was exposed to the world of sunday shool, 5 years ago, I have found my self deeply enaged with litrature and theartre. Working there has helped me develope my confidence, leadership skill highly.  </p>
+    
+            </div>
+        </div>
+        
     </div>
     <hr> 
-    <div class="librarian">
-        <h3> Assistant Librarian</h3>
-        <img src="Image/Librarian.jpg" alt="Library">
-        <p> Since the first day my foot entered the Library ,7 years ago, something in it has pulled me hard to come back again till this day. And after I got along with the librarians, I have been assistant since then.  </p>
+    <div class="md:grid md:grid-cols-2 border-2 border-orange-200 m-4 rounded">
+        <div class="border-2 m-4 rounded bg-yellow-50 shadow-xl mb-6 mt-10">
+            <h3 class="text-1xl font-bold"> Assistant Librarian</h3>
+            <div class=" flex items-center ">
+                <img src="Image/Librarian.jpg" alt="Library" class=" object-scale-down  m-2 w-30 h-40 ">
+                <p class="border-2 bg-slate-50 rounded m-2"> Since the first day my foot entered the Library ,7 years ago, something in it has pulled me hard to come back again till this day. And after I got along with the librarians, I have been assistant since then.  </p>
+    
+            </div>
+    
+        </div>
+    
+        <div class="border-2 m-4 rounded bg-yellow-50 shadow-xl mb-6 mt-10 ">
+            <h3 class="text-1xl font-bold"> Maths Club President</h3>
+            <div class=" flex items-center">
+             <div class="flex align-center justify-center rounded m-2">  <img src="Image/math.jpg" alt="maths" class="object-scale-down w-35 h-40   "> </div>
+            <p class="border-2 bg-slate-50 rounded m-2"> I have been my schools maths club presidnet for 2 years creating a fun and interactive ways to teach mathemaics among my friends. </p>
+    
+            </div>
+        </div>
 
     </div>
-    <hr> 
-    <div class="Maths">
-        <h3> Maths Club President</h3>
-        <img src="Image/math.jpg" alt="maths">
-        <p> I have been my schools maths club presidnet for 2 years creating a fun and interactive ways to teach mathemaics among my friends. </p>
-    </div>
-    <footer class="right">
+
+
+    <footer class="bg-gray-200 p-4 m-2 rounded" >
     
-        <h3 > My Contacts </h3>
+        <h3 class="text-2xl font-bold text-red-900 hover:text-emerald-600 "> My Contacts </h3>
         
-       <div>
-        <a href="instagram.com"><i class="fa fa-instagram fa-lg"></i></a>  
-        <a href="mailto:meklitzasrat@gmail.com"> &#9993; </a> 
-        <a href="mailto:meklitzasrat@gmail.com"> <i class="fa fa-facebook fa-lg"></i></a> 
-        <a href="https://www.instagram.com/maki_asrat/"> <i class="fa fa-twitter"> </i></a>
-        <a href="https://t.me/DolceFarNeinte"> <i class="fa fa-telegram"> </i></a>
-               
-       
-           <p id="copy"> &copy; copy right is reserved   | Nov, 2023 | protected by law </p>
-       </div>   
+       <div class=" flex justify-around text-lg p-4 justify-end">
+        <a href="instagram.com" class="col-span-1 hover:animate-bounce " class="text-4xl"><i class="fa fa-instagram fa-lg text-4xl text-orange-900 m-2  "></i></a>  
+        <a href="mailto:meklitzasrat@gmail.com" class="col-span-1 hover:animate-bounce  text-4xl text-orange-900 m-2 hover:text-grey-700"> &#9993; </a> 
+        <a href="mailto:meklitzasrat@gmail.com" class="col-span-1 hover:animate-bounce "> <i class="fa fa-facebook fa-lg text-4xl text-orange-900 m-2 hover:text-grey-700"></i></a> 
+        <a href="https://www.instagram.com/maki_asrat/" class="col-span-1 hover:animate-bounce "> <i class="fa fa-twitter text-4xl text-orange-900 m-2 hover:text-grey-700"> </i></a>
+        <a href="https://t.me/DolceFarNeinte" class="col-span-1 hover:animate-bounce "> <i class="fa fa-telegram text-4xl text-orange-900 m-2 hover:text-grey-700"> </i></a>
+            
+       </div>
+       <p id="" class="flex justify-center bg-orange-900 p-2 text-slate-50"> &copy;copy right is reserved   | Nov, 2023 | protected by law </p>   
+    
+    
+    
+    
     
      </footer>
+     </body>
+     </html>

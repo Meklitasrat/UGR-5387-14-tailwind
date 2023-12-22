@@ -3,97 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate</title>
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+      <script src="tailwind.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+<body class=" ">
+    <header class="bg-yellow-50 "> 
+        <div class="flex justify-between items-center " >
+            <h1 class="m-3 p-4 font-bold text-3xl font-serif ">  <i class="fa fa-book"></i> Certificate</h1>
+            <div class="px-4  cursor-pointer md:hidden" id="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+        </div>
 
-  <body>
-    <header class="menu"> 
-        <h1 >My Certificate</h1>
-        <nav>
-
-            
-            <ul>
-                <li><a href="home.html"> <i class="fa fa-home "></i> Home</a> </li>
-                <li><a href="hobby.html"> &#9836;Hobbies</a> </li>
-                <li> <a href="certificate.html"><i class="fa fa-check "></i>Certificate</a></li>
-                <li> <a href="Resume.html"> <i class="fa fa-copy "></i>Resume </a></li>
-                <li> <a href="Extracurricular.html"><i class="fa fa-certificate "></i>Extracurricular</a> </li>
+        <nav class=" hidden md:block m-5 " id="menu">
+            <ul class="flex flex-col md:flex-row md:justify-center">
+                <li class="m-3"><a href="home.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl hover:scale-150 font-serif"><i class="fa fa-home"></i> Home</a></li>
+                <li class="m-3"><a href="hobby.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif">&#9836;Hobbies</a></li>
+                <li class="m-3"><a href="certificate.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif"> <i class="fa fa-book"></i>Certificate</a></li>
+                <li class="m-3"><a href="Resume.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif"><i class="fa fa-copy"></i>Resume</a></li>
+                <li class="m-3"><a href="Extracurricular.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200  p-2 m-5 text-1xl font-serif"><i class="fa fa-certificate"></i>Extracurricular</a></li>
             </ul>
-            
         </nav>
-        
-        <div class="menu-bar-container">
-            <label class="hamburger-menu">
-              <input type="checkbox">
-            </label>
-            <aside class="sidebar">
-              <nav>
-                <ul>
-                    <li><a href="home.html"> <i class="fa fa-home "></i> Home</a> </li>
-                    <li><a href="hobby.html"> &#9836;Hobbies</a> </li>
-                    <li> <a href="certificate.html"><i class="fa fa-check "></i>Certificate</a></li>
-                    <li> <a href="Resume.html"> <i class="fa fa-copy "></i>Resume </a></li>
-                    <li> <a href="Extracurricular.html"><i class="fa fa-certificate "></i>Extracurricular</a> </li>
-                </ul>
-                
-              </nav>
-            </aside>
-          </div>
-        
-       </header>
+    </header>
     <hr>
-    <table>
-        <tr>
-        <th> Organization</th>
-        <th> Certificate </th>
-        <th> Type</th>
+    <table class="table-auto  m-4 bg-neutral-100 rounded border-2 border-collapse mx-16 ">
+
+        <tr class="border-2 border-orange-200">
+        <th> No.</th>
+        <th class="border-2 border-orange-200"> Organization</th>
+        <th class="border-2 border-orange-200"> Certificate </th>
+        <th class="border-2 border-orange-200"> Type</th>
         </tr>
 
-        <tr>
-            <td> <img src="Image/St.George.jpg" alt="st." width="200"> <p>St.Geoge Church </p> </td>
-            <td>
-                <p> For the compleition of Ethiopian Orthodox Oriented Schooling upto level 3</p> </td>
-                <td> <p> Certificate Of compleition</p></td>
+        <tr class="border-2 border-orange-200">
+            <td> 1. </td>
+            <td class="border-2 border-orange-200"> <div class="flex justify-center align-center"> <img src="Image/St.George.jpg" alt="st." class="object-scale-down w-20  h-30 m-2"> </div> <p class="text-center text-pink-900 font-bold ">St.Geoge Church </p> </td>
+            <td class="border-2 border-orange-200">
+                <p class="text-center text-pink-900 font-serif"> For the compleition of Ethiopian Orthodox Oriented Schooling upto level 3</p> </td>
+                <td class=" text-rose-600 font-serif "> <i class="fa fa-star"> Cerificate of compleition</i> </td>
         </tr>
-        <tr>
-            <td> <img src="Image/USA.jpg" alt="usa"> <p> American Center at the Ethiopian National Archive Library</p></td>
-            <td> For completing the "HOUR OF CODE" Basics Of Computer Science.</td>
-            <td> Cerificate of compleition</td>
+        <tr class="border-2 border-orange-200">
+            <td> 2. </td>
+            <td class="border-2 border-orange-200"> <div class="flex justify-center align-center"> <img src="Image/USA.jpg" alt="usa"> </div> <p class="text-pink-900 font-bold text-center"> American Center at the Ethiopian National Archive Library</p></td>
+            <td class="border-2 border-orange-200 "> <p class="text-center text-pink-900 font-serif "> For completing the "HOUR OF CODE" Basics Of Computer Science. </p></td>
+            <td class=" text-rose-600 font-serif "> <i class="fa fa-star"> Cerificate of compleition</i> </td>
         </tr>
-        <tr>
-            <td> <img src="Image/Interact.jpg" alt="interact"> <p> Interact Club at LCCS</p></td>
-            <td> <p> For Participating in the club as a memeber and for participating in a planting campaign. </p></td>
-            <td> Certificate of Paticipation</td>
+        <tr class="border-2 border-orange-200">
+            <td>3. </td>
+            <td class="border-2 border-orange-200"> <div class="flex justify-center align-center"> <img src="Image/Interact.jpg" alt="interact"></div> <p class="text-center text-pink-900 font-bold"> Interact Club at LCCS</p></td>
+            <td class="border-2 border-orange-200"> <p class="text-center text-pink-900 font-serif"> For Participating in the club as a memeber and for participating in a planting campaign. </p></td>
+            <td class=" text-rose-600 font-serif "> <i class="fa fa-star"> Cerificate of compleition</i> </td>
         </tr>
-        <tr>
-            <td> <img src="Image/AA_Admin.jpg" alt="AA_Admin"> <p> Addis Ababa K/K Wordera 7 </p></td>
-            <td>  For Hosting different motived festivals like:
-                 <ul>
-                    <li> Women's Day</li>
-                    <li> Ethiopian People's and Nationalities Day</li>
-                    <li> Grand Ethiopian Renaissance Dam Anniversary  </li>
+        <tr class="border-2 border-orange-200 m-4 ">
+            <td> 4. </td>
+            <td class="border-2 border-orange-200"> <div class="flex justify-center"> <img src="Image/AA_Admin.jpg" alt="AA_Admin" class="object-scale-down w-20 h-30"></div> <p class="text-center text-pink-900 font-bold"> Addis Ababa K/K Wordera 7 </p></td>
+            <td class="border-2 border-orange-200 " > <p class="font-bold  text-pink-900 font-serif"> For Hosting different motived festivals like:</p> 
+                 <ul class="">
+                    <li> <i class=" fa fa-check">  Women's Day</i></li>
+                    <li> <i class="fa fa-check"> Ethiopian People's and Nationalities Day</i> </li>
+                    <li> <i class="fa fa-check"> Grand Ethiopian Renaissance Dam Anniversary </i>  </li>
                  </ul>
                 </td>
-                 <td> Certificate of Participation </td>
+                <td class=" text-rose-600 font-serif "> <i class="fa fa-star"> Cerificate of compleition</i> </td>
         </tr>
         
         
     </table>
+
     <hr>
-    <footer class="right">
+    <footer class="bg-gray-200 p-4 m-2 rounded" >
     
-        <h3 > My Contacts </h3>
+        <h3 class="text-2xl font-bold text-red-900 hover:text-emerald-600 "> My Contacts </h3>
         
-       <div>
-        <a href="instagram.com"><i class="fa fa-instagram fa-lg"></i></a>  
-        <a href="mailto:meklitzasrat@gmail.com"> &#9993; </a> 
-        <a href="mailto:meklitzasrat@gmail.com"> <i class="fa fa-facebook fa-lg"></i></a> 
-        <a href="https://www.instagram.com/maki_asrat/"> <i class="fa fa-twitter"> </i></a>
-        <a href="https://t.me/DolceFarNeinte"> <i class="fa fa-telegram"> </i></a>
-               
-       
-           <p id="copy"> &copy; copy right is reserved   | Nov, 2023 | protected by law </p>
-       </div>   
+       <div class=" flex justify-around text-lg p-4 justify-end">
+        <a href="instagram.com" class="col-span-1 hover:animate-bounce " class="text-4xl"><i class="fa fa-instagram fa-lg text-4xl text-orange-900 m-2  "></i></a>  
+        <a href="mailto:meklitzasrat@gmail.com" class="col-span-1 hover:animate-bounce  text-4xl text-orange-900 m-2 hover:text-grey-700"> &#9993; </a> 
+        <a href="mailto:meklitzasrat@gmail.com" class="col-span-1 hover:animate-bounce "> <i class="fa fa-facebook fa-lg text-4xl text-orange-900 m-2 hover:text-grey-700"></i></a> 
+        <a href="https://www.instagram.com/maki_asrat/" class="col-span-1 hover:animate-bounce "> <i class="fa fa-twitter text-4xl text-orange-900 m-2 hover:text-grey-700"> </i></a>
+        <a href="https://t.me/DolceFarNeinte" class="col-span-1 hover:animate-bounce "> <i class="fa fa-telegram text-4xl text-orange-900 m-2 hover:text-grey-700"> </i></a>
+            
+       </div>
+       <p id="" class="flex justify-center bg-orange-900 p-2 text-slate-50"> &copy;copy right is reserved   | Nov, 2023 | protected by law </p>   
+    
+    
+    
+    
     
      </footer>
 

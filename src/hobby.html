@@ -3,95 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby</title>
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+      <script src="tailwind.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
- 
-  <body>
-    <header class="menu"> 
-        <h1 >My Hobby</h1>
-        <nav>
 
-            
-            <ul>
-                <li><a href="home.html"> <i class="fa fa-home "></i> Home</a> </li>
-                <li><a href="hobby.html"> &#9836;Hobbies</a> </li>
-                <li> <a href="certificate.html"><i class="fa fa-check "></i>Certificate</a></li>
-                <li> <a href="Resume.html"> <i class="fa fa-copy "></i>Resume </a></li>
-                <li> <a href="Extracurricular.html"><i class="fa fa-certificate "></i>Extracurricular</a> </li>
+</head>
+<body>
+    <header class="bg-yellow-50 "> 
+        <div class="flex justify-between items-center " >
+            <h1 class="m-3 p-4 font-bold text-3xl font-serif"> &#9836; Hobby  </h1>
+            <div class="px-4  cursor-pointer md:hidden" id="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+        </div>
+
+        <nav class=" hidden md:block m-5 " id="menu">
+            <ul class="flex flex-col md:flex-row md:justify-center">
+                <li class="m-3"><a href="home.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl hover:scale-150 font-serif"><i class="fa fa-home"></i> Home</a></li>
+                <li class="m-3"><a href="hobby.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif">&#9836; Hobbies </a></li>
+                <li class="m-3"><a href="certificate.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif"><i class="fa fa-book"></i>Certificate</a></li>
+                <li class="m-3"><a href="Resume.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif"><i class="fa fa-copy"></i>Resume</a></li>
+                <li class="m-3"><a href="Extracurricular.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200  p-2 m-5 text-1xl font-serif"><i class="fa fa-certificate"></i>Extracurricular</a></li>
             </ul>
-            
         </nav>
-        
-        <div class="menu-bar-container">
-            <label class="hamburger-menu">
-              <input type="checkbox">
-            </label>
-            <aside class="sidebar">
-              <nav>
-                <ul>
-                    <li><a href="home.html"> <i class="fa fa-home "></i> Home</a> </li>
-                    <li><a href="hobby.html"> &#9836;Hobbies</a> </li>
-                    <li> <a href="certificate.html"><i class="fa fa-check "></i>Certificate</a></li>
-                    <li> <a href="Resume.html"> <i class="fa fa-copy "></i>Resume </a></li>
-                    <li> <a href="Extracurricular.html"><i class="fa fa-certificate "></i>Extracurricular</a> </li>
-                </ul>
-                
-              </nav>
-            </aside>
-          </div>
-        
-       </header>
+    </header>
     
     <hr>
 
     <div class="main">
-        <div class="books">
-            <h3> Reading #My choosen Ones <i class="fa fa-heart fa-lg"></i></h3>
-            <div class="sheldon">
-                <h3> Sydney Sheldon </h3>
-                <img src="Image/Sheldon.jpg" alt="sheldon">
-                <p> Sydney Sheldon's books have captivated readers worldwide, and Iparticularly love his works. His novels have a unique ability to inspire women to grow and evolve as individuals. One of your favorite books, "Stars Shine Down," exemplifies this theme exceptionally well. In "Stars Shine Down," Sheldon masterfully portrays a strong and determined female protagonist who overcomes numerous challenges to achieve success and personal growth. The story serves as a powerful reminder that women have the potential to rise above societal expectations and pursue their dreams with unwavering determination. Sheldon's writing style, characterized by gripping plots and well-developed characters, further enhances the impact of his stories. His ability to create relatable and inspiring female characters resonates with readers, encouraging them to reflect on their own lives and aspirations. </p>
+        <h3 class="text-center text-2xl text-orange-700 border-2 border-orange-200 rounded m-4 "> Reading #My choosen Ones <i class="fa fa-heart fa-lg"></i></h3>
+        <div class="books md:grid md:grid-cols-2 border-2 border-orange-200 m-4 rounded">
+            <div class="sheldon border-2 m-4 rounded bg-yellow-50 shadow-xl mb-6 mt-10">
+                <h3 class="text-1xl font-bold"> Sydney Sheldon </h3>
+                <div class="flex items-center">
+                    <img src="Image/Sheldon.jpg" alt="sheldon" class="border-2 rounded">
+                    <p class="border-2 bg-slate-50 rounded m-2 "> Sydney Sheldon's books have captivated readers worldwide, and Iparticularly love his works. His novels have a unique ability to inspire women to grow and evolve as individuals. One of your favorite books, "Stars Shine Down," exemplifies this theme exceptionally well. In "Stars Shine Down," Sheldon masterfully portrays a strong and determined female protagonist who overcomes numerous challenges to achieve success and personal growth. The story serves as a powerful reminder that women have the potential to rise above societal expectations and pursue their dreams with unwavering determination. Sheldon's writing style, characterized by gripping plots and well-developed characters, further enhances the impact of his stories. His ability to create relatable and inspiring female characters resonates with readers, encouraging them to reflect on their own lives and aspirations. </p>
+
+                </div>
 
             </div>
-            <div class="JK">
-                <h3> JK Rowling </h3>
-                <img src="Image/Jk.jpg" alt="Jk">
-                <p>I have a deep appreciation for JK Rowling's books and her extraordinary fanatical world creations. The Harry Potter series, in particular, has captured the hearts of millions of readers, and I have a special fondness for it, especially "Harry Potter and the Goblet of Fire." K Rowling's imaginative storytelling and meticulous attention to detail have brought to life a magical universe that has enchanted readers of all ages. The Harry Potter series, with its richly developed characters and intricate plotlines, has become a beloved cultural phenomenon. </p>
+            <div class="JK border-2 m-4 rounded bg-yellow-50 shadow-xl mb-6 mt-10">
+                <h3 class="text-1xl font-bold"> JK Rowling </h3>
+                <div class="flex items-center">
+                    <img src="Image/Jk.jpg" alt="Jk" class="border-2 rounded ">
+                <p class="border-2 bg-slate-50 rounded m-2 ">I have a deep appreciation for JK Rowling's books and her extraordinary fanatical world creations. The Harry Potter series, in particular, has captured the hearts of millions of readers, and I have a special fondness for it, especially "Harry Potter and the Goblet of Fire." K Rowling's imaginative storytelling and meticulous attention to detail have brought to life a magical universe that has enchanted readers of all ages. The Harry Potter series, with its richly developed characters and intricate plotlines, has become a beloved cultural phenomenon. </p>
+
+                </div>
             </div>
         </div>
-        <div class="volley">
-            <h3> Playing volleyball &#9918; </h3>
-            <video src="image/volleyball.mp4" controls   loop ></video>
-            <p> When I joined a new school in elementary the main that helped me socialize was through Volley ball. Since the day my hand held those balls I made it a habbit to go to school early and play. These habit hasn't only execlled my playing skill but also was academically enhancing. </p>
+
+    <div class="md:grid md:grid-cols-2 border-2 border-orange-200 m-4 rounded">
+        <div class="volley border-2 m-4 rounded bg-yellow-50 shadow-xl mb-6 mt-10">
+            <h3 class="text-1xl font-bold"> Playing volleyball &#9918; </h3>
+            <div class=" flex items-center">
+                <video src="image/volleyball.mp4" controls   loop class="border-2 rounded " ></video>
+            <p class="border-2 bg-slate-50 rounded m-2 "> When I joined a new school in elementary the main that helped me socialize was through Volley ball. Since the day my hand held those balls I made it a habbit to go to school early and play. These habit hasn't only execlled my playing skill but also was academically enhancing. </p>
+
+            </div>
         </div>
-        <div class="church">
-            <h3> Connecting With God &#9768; </h3>
-            <img src="image/Church_me.jpg " alt="church" >
-            <p> First by my parents order then by my own interest I have not spent one sunday morning without going to the church. The peace and serene area always elevates me spritually and gives me intenal coalition. </p>
-        </div>
-        <div class="Cooking">
-            <h3> Playing with flavours &#9832; </h3>
-            <img src="image/Food.jpg" alt="Cooking">
-            <p> My nick name at home is "sancho". Sancho refers to someone who loves eating, so I am it. I like mixing incommon flavours that are mental to try. </p>
+
+        <div class="church border-2 m-4 rounded bg-yellow-50 shadow-xl mb-6 mt-10 ">
+            <h3 class="text-1xl font-bold p-2 "> Connecting With God &#9768; </h3>
+            <div  class=" flex justify-center align-center mt-7 " >
+                <img src="image/Church_me.jpg " alt="church" class=" rounded w-12">
+                <p class="border-2 bg-slate-50 rounded m-2 "> First by my parents order then by my own interest I have not spent one sunday morning without going to the church. The peace and serene area always elevates me spritually and gives me intenal coalition. </p>
+
+            </div>
         </div>
 
     </div>
 
-    <footer class="right">
+        <div class="Cooking border-2 m-4 rounded bg-yellow-50 shadow-xl mb-6 mt-10 border-red-200">
+            <h3 class="text-1xl font-bold"> Playing with flavours &#9832; </h3>
+            <div class=" flex justify-center align-center ">
+                <img src="image/Food.jpg" alt="Cooking">
+
+            </div>
+            <p class="border-2 bg-slate-50 rounded m-2 text-center "> My nick name at home is "sancho". Sancho refers to someone who loves eating, so I am it. I like mixing incommon flavours that are mental to try. </p>
+        </div>
+
+    </div>
+
+    <footer class="bg-gray-200 p-4 m-2 rounded" >
     
-        <h3 > My Contacts </h3>
+        <h3 class="text-2xl font-bold text-red-900 hover:text-emerald-600 "> My Contacts </h3>
         
-       <div>
-        <a href="instagram.com"><i class="fa fa-instagram fa-lg"></i></a>  
-        <a href="mailto:meklitzasrat@gmail.com"> &#9993;</a> 
-        <a href="mailto:meklitzasrat@gmail.com"> <i class="fa fa-facebook fa-lg"></i></a> 
-        <a href="https://www.instagram.com/maki_asrat/"> <i class="fa fa-twitter"> </i></a>
-        <a href="https://t.me/DolceFarNeinte"> <i class="fa fa-telegram"> </i></a>
-               
-       
-           <p id="copy"> &copy; copy right is reserved   | Nov, 2023 | protected by law </p>
-       </div>   
+       <div class=" flex justify-around text-lg p-4 justify-end">
+        <a href="instagram.com" class="col-span-1 hover:animate-bounce " class="text-4xl"><i class="fa fa-instagram fa-lg text-4xl text-orange-900 m-2  "></i></a>  
+        <a href="mailto:meklitzasrat@gmail.com" class="col-span-1 hover:animate-bounce  text-4xl text-orange-900 m-2 hover:text-grey-700"> &#9993; </a> 
+        <a href="mailto:meklitzasrat@gmail.com" class="col-span-1 hover:animate-bounce "> <i class="fa fa-facebook fa-lg text-4xl text-orange-900 m-2 hover:text-grey-700"></i></a> 
+        <a href="https://www.instagram.com/maki_asrat/" class="col-span-1 hover:animate-bounce "> <i class="fa fa-twitter text-4xl text-orange-900 m-2 hover:text-grey-700"> </i></a>
+        <a href="https://t.me/DolceFarNeinte" class="col-span-1 hover:animate-bounce "> <i class="fa fa-telegram text-4xl text-orange-900 m-2 hover:text-grey-700"> </i></a>
+            
+       </div>
+       <p id="" class="flex justify-center bg-orange-900 p-2 text-slate-50"> &copy;copy right is reserved   | Nov, 2023 | protected by law </p>   
     
     
     

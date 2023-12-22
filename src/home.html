@@ -3,96 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+      <script src="tailwind.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+<body>
+    <header class="bg-yellow-50 "> 
+        <div class="flex justify-between items-center " >
+            <h1 class="m-3 p-4 font-bold text-3xl font-serif"> <i class="fa fa-home "> </i> Home  </h1>
+            <div class="px-4  cursor-pointer md:hidden" id="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+        </div>
 
-
-  <body>
-    <header class="menu"> 
-        <h1 > Home</h1>
-        <nav>
-
-            
-            <ul>
-                <li><a href="home.html"> <i class="fa fa-home "></i> Home</a> </li>
-                <li><a href="hobby.html"> &#9836;Hobbies</a> </li>
-                <li> <a href="certificate.html"><i class="fa fa-check "></i>Certificate</a></li>
-                <li> <a href="Resume.html"> <i class="fa fa-copy "></i>Resume </a></li>
-                <li> <a href="Extracurricular.html"><i class="fa fa-certificate "></i>Extracurricular</a> </li>
+        <nav class=" hidden md:block m-5 " id="menu">
+            <ul class="flex flex-col md:flex-row md:justify-center">
+                <li class="m-3"><a href="home.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl hover:scale-150 font-serif"><i class="fa fa-home"></i> Home</a></li>
+                <li class="m-3"><a href="hobby.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif">&#9836;Hobbies</a></li>
+                <li class="m-3"><a href="certificate.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif"><i class="fa fa-book"></i>Certificate</a></li>
+                <li class="m-3"><a href="Resume.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif"><i class="fa fa-copy"></i>Resume</a></li>
+                <li class="m-3"><a href="Extracurricular.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200  p-2 m-5 text-1xl font-serif"><i class="fa fa-certificate"></i>Extracurricular</a></li>
             </ul>
-            
         </nav>
-        
-        <div class="menu-bar-container">
-            <label class="hamburger-menu">
-              <input type="checkbox">
-            </label>
-            <aside class="sidebar">
-              <nav>
-                <ul>
-                    <li><a href="home.html"> <i class="fa fa-home "></i> Home</a> </li>
-                    <li><a href="hobby.html"> &#9836;Hobbies</a> </li>
-                    <li> <a href="certificate.html"><i class="fa fa-check "></i>Certificate</a></li>
-                    <li> <a href="Resume.html"> <i class="fa fa-copy "></i>Resume </a></li>
-                    <li> <a href="Extracurricular.html"><i class="fa fa-certificate "></i>Extracurricular</a> </li>
-                </ul>
-                
-              </nav>
-            </aside>
-          </div>
-        
-       </header>
+    </header>
+
     <hr>
+
+    <fieldset class="m-2 border-4 rounded-lg">
+        <legend class="text-2xl font-semibold p-2 font-serif">MEKLIT ASRAT</legend>
+        <div class="flex items-center p-2">
+            <div class="img rounded-lg ">
+                <img class="rounded-lg" src="Image/Mee.jpg" alt="My Photo">            
+            </div>
+            <div class="p-2 bg-gray-200 m-2 rounded-lg">
+                <h4 class="text-sm font-bold">An Ethusiast Web Developer with ever growing cultivatable knowledge to help people community and the world. Raised with much love from my family, friends and neighbours I am keen to serve the community that has served me.</h4>
+            </div>
+        </div>
+    </fieldset>
+
+    <aside>
+        <p class="p-4 bg-yellow-50  border-4 m-4 rounded-lg">What makes Meklit Meklit is her compassionate nature by actively engaging in activities that benefit others. My willingness to assist the elderly showcases my empathy and respect for older individuals. Additionally, I enjoy playing with kids that suggests a nurturing and playful side to my personality. Furthermore, I involve in household chores that indicates a responsible and proactive approach to maintaining a clean and organized living environment of mine. Overall, my interests and actions reflect my caring nature and dedication to making a positive impact in various spheres of life.</p>
+    </aside>
+
     
+    <footer class="bg-gray-200 p-4 m-2 rounded" >
     
-            <fieldset>
-                <legend> MEKLIT ASRAT </legend>
-                <div class="cont">
-                    <div class="img">
-                       
-                            <img src="Image/Mee.jpg" alt="My Photo" >            
-                    </div>
-                    <div class="txt">
-                        <h4> An Ethusiast Web Developer with ever growing cultivatable knowledge to help people community and the world. Raised with much love from my family, friends and neighbours I am keen to serve the community that has served me.   </h4>
-                    </div>
-                   
-                </div>
-               
-            </fieldset>
-    
-        <aside>
-            <p> What makes Meklit Meklit is her compassionate nature by actively engaging in activities that benefit others. My  willingness to assist the elderly showcases my empathy and respect for older individuals.  Additionally, I enjoy playing with kids that suggests a nurturing and playful side to my personality. Furthermore, I involve in household chores that indicates a responsible and proactive approach to maintaining a clean and organized living environment of mine. Overall, my interests and actions reflect my caring nature and dedication to making a positive impact in various aspects of her life. </p>
-            </aside>
-    
-    
+        <h3 class="text-2xl font-bold text-red-900 hover:text-emerald-600 "> My Contacts </h3>
         
-          
-        
-    
-    
-     <footer class="right">
-    
-        <h3 > My Contacts </h3>
-        
-       <div>
-        <a href="instagram.com"><i class="fa fa-instagram fa-lg"></i></a>  
-        <a href="mailto:meklitzasrat@gmail.com"> &#9993; </a> 
-        <a href="mailto:meklitzasrat@gmail.com"> <i class="fa fa-facebook fa-lg"></i></a> 
-        <a href="https://www.instagram.com/maki_asrat/"> <i class="fa fa-twitter"> </i></a>
-        <a href="https://t.me/DolceFarNeinte"> <i class="fa fa-telegram"> </i></a>
-               
-       
-           <p id="copy"> &copy;copy right is reserved   | Nov, 2023 | protected by law </p>
-       </div>   
+       <div class=" flex justify-around text-lg p-4 justify-end">
+        <a href="instagram.com" class="col-span-1 hover:animate-bounce " class="text-4xl"><i class="fa fa-instagram fa-lg text-4xl text-orange-900 m-2  "></i></a>  
+        <a href="mailto:meklitzasrat@gmail.com" class="col-span-1 hover:animate-bounce  text-4xl text-orange-900 m-2 hover:text-grey-700"> &#9993; </a> 
+        <a href="mailto:meklitzasrat@gmail.com" class="col-span-1 hover:animate-bounce "> <i class="fa fa-facebook fa-lg text-4xl text-orange-900 m-2 hover:text-grey-700"></i></a> 
+        <a href="https://www.instagram.com/maki_asrat/" class="col-span-1 hover:animate-bounce "> <i class="fa fa-twitter text-4xl text-orange-900 m-2 hover:text-grey-700"> </i></a>
+        <a href="https://t.me/DolceFarNeinte" class="col-span-1 hover:animate-bounce "> <i class="fa fa-telegram text-4xl text-orange-900 m-2 hover:text-grey-700"> </i></a>
+            
+       </div>
+       <p id="" class="flex justify-center bg-orange-900 p-2 text-slate-50"> &copy;copy right is reserved   | Nov, 2023 | protected by law </p>   
     
     
     
     
     
      </footer>
-    
-    
-
 </body>
 </html>

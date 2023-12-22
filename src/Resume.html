@@ -3,132 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+      <script src="tailwind.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+<body class="">
+    <header class="bg-yellow-50 "> 
+        <div class="flex justify-between items-center " >
+            <h1 class="m-3 p-4 font-bold text-3xl font-serif"> <i class="fa fa-copy"></i> Resume </h1>
+            <div class="px-4  cursor-pointer md:hidden" id="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+        </div>
 
-   
-  <body>
-
-    <header class="menu"> 
-        <h1 >My Resume</h1>
-        <nav>
-
-            
-            <ul>
-                <li><a href="home.html"> <i class="fa fa-home "></i> Home</a> </li>
-                <li><a href="hobby.html"> &#9836;Hobbies</a> </li>
-                <li> <a href="certificate.html"><i class="fa fa-check "></i>Certificate</a></li>
-                <li> <a href="Resume.html"> <i class="fa fa-copy "></i>Resume </a></li>
-                <li> <a href="Extracurricular.html"><i class="fa fa-certificate "></i>Extracurricular</a> </li>
+        <nav class=" hidden md:block m-5 " id="menu">
+            <ul class="flex flex-col md:flex-row md:justify-center">
+                <li class="m-3"><a href="home.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl hover:scale-150 font-serif"><i class="fa fa-home"></i> Home</a></li>
+                <li class="m-3"><a href="hobby.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif">&#9836;Hobbies</a></li>
+                <li class="m-3"><a href="certificate.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif"><i class="fa fa-book"></i>Certificate</a></li>
+                <li class="m-3"><a href="Resume.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200 p-2 m-5 text-1xl font-serif"><i class="fa fa-copy"></i>Resume</a></li>
+                <li class="m-3"><a href="Extracurricular.html" class="md:border-2 md:text-1xl md:rounded md:p-3 md:m-3 md:bg-sky-200 md:text-violet-700 hover:bg-gray-200  p-2 m-5 text-1xl font-serif"><i class="fa fa-certificate"></i>Extracurricular</a></li>
             </ul>
-            
         </nav>
-        
-        <div class="menu-bar-container">
-            <label class="hamburger-menu">
-              <input type="checkbox">
-            </label>
-            <aside class="sidebar">
-              <nav>
-                <ul>
-                    <li><a href="home.html"> <i class="fa fa-home "></i> Home</a> </li>
-                    <li><a href="hobby.html"> &#9836;Hobbies</a> </li>
-                    <li> <a href="certificate.html"><i class="fa fa-check "></i>Certificate</a></li>
-                    <li> <a href="Resume.html"> <i class="fa fa-copy "></i>Resume </a></li>
-                    <li> <a href="Extracurricular.html"><i class="fa fa-certificate "></i>Extracurricular</a> </li>
-                </ul>
-                
-              </nav>
-            </aside>
-          </div>
-        
-       </header>
+    </header>
 
     <hr>
-    <div class="language">
-        <img src="Image/Language.jpg" alt="lang">
+    <div class="language bg-yellow-50 mt-6 rounded mb-6 border-2  border-red-200 rounded m-2 mt-10 mb-6 shadow-xl">
+        <div class="flex justify-center align-center"> <img src="Image/Language.jpg" alt="lang"></div>
         <dl>
-            <dt> Amharic</dt>
-            <dd>Amharic is an Ethiopian Semitic language, which is a subgrouping within the Semitic branch of the Afroasiatic languages. It is spoken as a first language by the Amharas, and also serves as a lingua franca for all other populations residing in major cities and towns in Ethiopia. Being Born and raised here in Addis Ababa, I have grwon Amharic being my mother tounge language. I can perfectly speak, listen, read and write Amharic Language.
+            <dt class="text-center m-2 text-2xl  text-2xl font-bold"> Amharic</dt>
+            <dd class="border-2 m-2 bg-slate-50 m-2 ">Amharic is an Ethiopian Semitic language, which is a subgrouping within the Semitic branch of the Afroasiatic languages. It is spoken as a first language by the Amharas, and also serves as a lingua franca for all other populations residing in major cities and towns in Ethiopia. Being Born and raised here in Addis Ababa, I have grwon Amharic being my mother tounge language. I can perfectly speak, listen, read and write Amharic Language.
 
             </dd>
-            <dt> English</dt>
-            <dd> English is a West Germanic language in the Indo-European language family, whose speakers, called Anglophones, originated in early medieval England. Learning in private school where English the most used language in the compound I have managed to enhane the language.</dd>
-            <dt> Ge'ez </dt>
-            <dd> Ge'ez is an ancient South Semitic language. The language originates from Eritrea, with the oldest known Ge'ez script bearing in Matara, southern Eritrea. Though this language is hardly given at anyhwhere but in some countries like German in a phd level with high payment and so. But the Ethiopian Orthodox Tewahedo Church is teach this extinct language for free. That is how I have also come to learn the language.</dd>
+            <dt class="text-center m-2 text-2xl font-bold"  > English</dt>
+            <dd class="border-2 m-2 bg-slate-50 m-2 "> English is a West Germanic language in the Indo-European language family, whose speakers, called Anglophones, originated in early medieval England. Learning in private school where English the most used language in the compound I have managed to enhane the language.</dd>
+            <dt class="text-center m-2 text-2xl font-bold"> Ge'ez </dt>
+            <dd class="border-2 m-2 bg-slate-50 m-2 " > Ge'ez is an ancient South Semitic language. The language originates from Eritrea, with the oldest known Ge'ez script bearing in Matara, southern Eritrea. Though this language is hardly given at anyhwhere but in some countries like German in a phd level with high payment and so. But the Ethiopian Orthodox Tewahedo Church is teach this extinct language for free. That is how I have also come to learn the language.</dd>
         </dl>
     </div>
-    <fieldset>
-        <legend> Education</legend>
-        <div Class="Elementary">
-            <h3> Middle School (2002-2008) </h3>
-            <img src="Image/Middle.jpg" alt="Middle">
-            <p> I have completed my Nursery and Middle School at Victory Academy. It plays a Laying foudation in who I am today building me physically, acedamically and pyscologically. </p>
+    <fieldset class=" mt-6 mb-6">
+        <legend class="text-center bm-4 bg-red-200 p-4 rounded text-2xl font-bold shadow-xl"> Education &#128366; </legend>
+       
+        <div class="md:grid md:grid-cols-2 m-4 ">
+            <div Class="Elementary mr-6 mb-6 border-2 border-red-200 rounded mt-10 shadow-xl">
+                <h3 class="bg-neutral-400 text-center  rounded text-2xl font-bold"> Middle School (2002-2008) </h3>
+                <div class=" flex">
+                    <div class="flex align-centre justify-center"> <img src="Image/Middle.jpg" alt="Middle" class="m-2 use object-contain  w-30 h-40 h-full"> </div>
+                <p class="border-2 bg-yellow-50 rounded m-2 p-3"> I have completed my Nursery and Middle School at Victory Academy. It plays a Laying foudation in who I am today building me physically, acedamically and pyscologically. </p>
+    
+                </div>
+    
+            </div>
+          
+            <div class="highschool ml-6 mb-6 mt-10 border-2 border-red-200 rounded m-4 shadow-xl">
+                <h3 class="bg-neutral-400 text-center  rounded text-2xl font-bold"> Highschool (2009-2013) </h3>
+                <div class="flex justify-center align-center ">
+                    <div class="flex align-centre justify-center "> <img src="Image/Lccs.jpg" alt="Lccs" class="m-2 rounded object-contain h-full "> </div>
+                <p class="border-2 bg-yellow-50 rounded m-2 p-3" > I have learnt at LCCS in my elementary and highschool era. The school has enabled and shaped my life for the better preparing me well for the secondary school leavinf exam well.</p>
+    
+                </div>
+            </div>
+
+
         </div>
         <hr>
-        <div class="highschool">
-            <h3> Highschool (2009-2013) </h3>
-            <img src="Image/Lccs.jpg" alt="Lccs">
-            <p> I have learnt at LCCS in my elementary and highschool era. The school has enabled and shaped my life for the better preparing me well for the secondary school leavinf exam well.</p>
-        </div>
-        <hr>
-        <div class="uni"> 
-            <h3> Addis Ababa University ( 2014- Present)</h3>
-            <img src="Image/AAU.jpg" alt="AAU">
-            <p> I am currently learning at Addis Ababa Institute Of Techcnology under software Engineering stream. </p>
+        <div class="uni border-2 border-red-200 rounded m-2  mt-10 mb-6 shadow-xl "> 
+            <h3 class="bg-neutral-400 text-center  rounded text-2xl font-bold"> Addis Ababa University ( 2014- Present)</h3>
+            <div class="flex align-centre justify-center"> <img src="Image/AAU.jpg" alt="AAU" class="m-4 rounded "> </div>
+            <p class="border-2 bg-yellow-50 rounded m-2 p-3"> I am currently learning at Addis Ababa Institute Of Techcnology under software Engineering stream. </p>
         </div>
     </fieldset>
-    <fieldset>
-        <legend> Skills</legend>
-        <img src="Image/Skills.jpg" alt="skill">
+
+
+    <fieldset class=" shadow-xl  rounded m-4">
+        <legend class="text-center bm-4 bg-red-200 p-4 rounded text-2xl font-bold">  Skills</legend>
+        <div class="flex justify-center align-centre m-4 rounded mb-6"> <img src="Image/Skills.jpg" alt="skill"></div>
         <hr>
-        <div class="Photoshop">
-            <h3> Adobe Photo-Shoping</h3>
-            <img src="Image/Photoshop.jpg" alt="Photo">
-            <p> Through the semster break I have managed to learn Adobe photoshop and have mastered the basics of the course.</p>
-             <hr>
+
+        <div class="md:grid md:grid-cols-2 ">
+            <div class="Photoshop mr-6 border-2 border-red-200 rounded mb-6 mt-10 m-2 shadow-xl">
+                <h3 class="bg-neutral-400 text-center  rounded text-2xl font-bold"> Adobe Photo-Shoping</h3>
+             <div class="flex justify-center align-center md:mt-10">
+               <img src="Image/Photoshop.jpg" alt="Photo" class="m-2 w-20 h-30 ">
+                <p class="border-2 bg-yellow-50 rounded m-2 p-3"> Through the semster break I have managed to learn Adobe photoshop and have mastered the basics of the course.</p>
+    
+              </div>
+            </div>
+    
+            <div class="dribble ml-6 border-2 border-red-200 rounded m-2 mt-10 mb-6 shadow-xl">
+                <h3 class="bg-neutral-400 text-center  rounded text-2xl font-bold "> Dribbling</h3>
+                <div class="flex justify-center align-center">
+                    <video src="Image/Dribble.mp4" controls  loop class=" image w-30 h-30 "> </video>
+                <p class="border-2 bg-yellow-50 rounded m-2 p-3"> As any Ethiopian youngster raised among the neigbouthood I grew up playing football with my fellow friends and through that I have mastered the art of dribbling.</p>
+    
+                </div>
+            </div>
+
         </div>
-        <div class="dribble">
-            <h3> Dribbling</h3>
-            <video src="Image/Dribble.mp4" controls  loop> </video>
-            <p> As any Ethiopian youngster raised among the neigbouthood I grew up playing football with my fellow friends and through that I have mastered the art of dribbling.</p>
-        </div>
+
+
+
+
         <hr>
-        <div class="Acting">
-            <h3> Acting</h3>
-            <img src="Image/Acting.jpg" alt="act" >
-            <p> Having a great desire for acting has made keen to seek stages wherever I go. With a great desire to learn the profession I have achieved to meet a lot of proffessionals in the field making grow pyscologically and emotionaly. </p>
+        <div class="Acting border-2  border-red-200 rounded m-2 mt-10 mb-6 shadow-xl">
+            <h3 class="bg-neutral-400 text-center  rounded text-2xl font-bold"> Acting</h3>
+            <div class="flex justify-center align-centre m-2"> <img src="Image/Acting.jpg" alt="act" class="object-scale-down w-25 h-40 rounded " ></div> 
+            <p class="border-2 bg-yellow-50 rounded m-2 p-3"> Having a great desire for acting has made keen to seek stages wherever I go. With a great desire to learn the profession I have achieved to meet a lot of proffessionals in the field making grow pyscologically and emotionaly. </p>
         </div>
     </fieldset>
-    <fieldset>
-        <legend> Personal Projects </legend>
-        <div class="adobe">
-            <h3> Giving companies a brand Identity</h3>
-            <img src="Image/Efoyta.jpg" alt="efoy"> <img src="Image/Utopia.jpg" alt="utopia"> <img src="Image/Sunrise-Pharmacy.png" alt="Sunrise-Pharmacy logo">
-            <p> I have created a lot of full branding Identitiy for different Ideal Compnies individually and in group. </p>
+
+    <fieldset class="mt-6  rounded m-4 shadow-xl ">
+        <legend class="text-center bm-4 bg-red-200 p-4 rounded text-2xl font-bold mb-6 shadow-xl "> Personal Projects </legend>
+
+        <div class="adobe border-2 border-red-200 shadow-xl  rounded m-2 mb-6 border-2 border-red-200 rounded">
+            <h3 class="bg-neutral-400 text-center  rounded text-2xl font-bold"> Giving companies a brand Identity</h3>
+            <div class="flex justify-center align-centre m-2">
+                <div class="flex justify-around  align-centre m-2 "> <img src="Image/Efoyta.jpg" alt="efoy" class="object-scale-down w-25 h-40 rounded "> <img src="Image/Utopia.jpg" alt="utopia" class="object-scale-down w-25 h-40 rounded ">  </div> 
+            </div>
+            <p class="border-2 bg-yellow-50 rounded m-2 p-3"> I have created a lot of full branding Identitiy for different Ideal Compnies individually and in group. </p>
         </div>
         <hr>
-        <div class="billboard">
-            <h3> Launching a billboard Ad </h3> 
-            <img src="Image/Billboard.jpg" alt="bill" > 
-            <p> This billboard aim to advertise a sofa comapny whose motto was "A comfort Out of the World". </p>
+        <div class="billboard border-2 border-red-200 rounded m-2 shadow-xl ">
+            <h3 class="bg-neutral-400 text-center  rounded text-2xl font-bold"> Launching a billboard Ad </h3> 
+            <div class="flex justify-center align-centre m-2"> <img src="Image/Billboard.jpg" alt="bill" class="object-scale-down w-25 h-40 rounded" > </div> 
+            <p class="border-2 bg-yellow-50 rounded m-2 p-3"> This billboard aim to advertise a sofa comapny whose motto was "A comfort Out of the World". </p>
 
         </div>
     </fieldset>
-    <footer class="right">
+
+    <footer class="bg-gray-200 p-4 m-2 rounded" >
     
-        <h3 > My Contacts </h3>
+        <h3 class="text-2xl font-bold text-red-900 hover:text-emerald-600 "> My Contacts </h3>
         
-       <div>
-        <a href="instagram.com"><i class="fa fa-instagram fa-lg"></i></a>  
-        <a href="mailto:meklitzasrat@gmail.com"> &#9993; </a> 
-        <a href="mailto:meklitzasrat@gmail.com"> <i class="fa fa-facebook fa-lg"></i></a> 
-        <a href="https://www.instagram.com/maki_asrat/"> <i class="fa fa-twitter"> </i></a>
-        <a href="https://t.me/DolceFarNeinte"> <i class="fa fa-telegram"> </i></a>
-               
-       
-           <p id="copy"> &copy; copy right is reserved   | Nov, 2023 | protected by law </p>
-       </div>   
+       <div class=" flex justify-around text-lg p-4 justify-end">
+        <a href="instagram.com" class="col-span-1 hover:animate-bounce " class="text-4xl"><i class="fa fa-instagram fa-lg text-4xl text-orange-900 m-2  "></i></a>  
+        <a href="mailto:meklitzasrat@gmail.com" class="col-span-1 hover:animate-bounce  text-4xl text-orange-900 m-2 hover:text-grey-700"> &#9993; </a> 
+        <a href="mailto:meklitzasrat@gmail.com" class="col-span-1 hover:animate-bounce "> <i class="fa fa-facebook fa-lg text-4xl text-orange-900 m-2 hover:text-grey-700"></i></a> 
+        <a href="https://www.instagram.com/maki_asrat/" class="col-span-1 hover:animate-bounce "> <i class="fa fa-twitter text-4xl text-orange-900 m-2 hover:text-grey-700"> </i></a>
+        <a href="https://t.me/DolceFarNeinte" class="col-span-1 hover:animate-bounce "> <i class="fa fa-telegram text-4xl text-orange-900 m-2 hover:text-grey-700"> </i></a>
+            
+       </div>
+       <p id="" class="flex justify-center bg-orange-900 p-2 text-slate-50"> &copy;copy right is reserved   | Nov, 2023 | protected by law </p>   
+    
+    
+    
+    
     
      </footer>
+     </body>
+     </html>
     
